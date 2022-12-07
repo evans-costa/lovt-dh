@@ -23,6 +23,15 @@
     <label for="description">Descrição</label>
     <input id="description" name="description" type="text"/>
 
+    <label for="category">Categoria</label>
+      <select name="category">
+        <% for (let category of categories) { %>
+          <option value="<%=category.id%>">
+            <%=category.Cname%>
+          </option>
+        <% } %>
+      </select>
+
     <button type="submit">Cadastrar</button>
   </form>
 </body>
