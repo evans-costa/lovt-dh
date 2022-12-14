@@ -35,12 +35,12 @@ module.exports = (sequelize, DataTypes) => {
         } 
     );
 
-    Immobile.associate = (models) => {
-        Immobile.belongsTo(models.Category, {
-            as: 'category',
-            foreignKey: 'category_id'
-        });
-    };
+    // Immobile.associate = (models) => {
+    //     Immobile.belongsTo(models.Category, {
+    //         as: 'category',
+    //         foreignKey: 'category_id'
+    //     });
+    // };
 
     return Immobile;
 };
